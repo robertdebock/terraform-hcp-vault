@@ -4,9 +4,9 @@ This repository allows spinning up a HashiCorp Vault cluster on the HashiCorp Cl
 
 Requirements:
 
-- Terraform installed.
-- An HCP account.
-- An HCP service principal and key.
+- [Terraform](https://www.terraform.io/) installed.
+- An [HCP](https://portal.cloud.hashicorp.com/) account.
+- An [HCP service principal](https://portal.cloud.hashicorp.com/access/service-principals) and key.
 
 ## HCP service principal
 
@@ -38,4 +38,17 @@ In the file `terraform.tfvars` you can override these variables.
 
 ```shell
 terraform init
+```
+
+## Deploy
+
+```shell
+terraform plan
+terraform apply
+```
+
+## Destroy
+
+```shell
+terraform destroy
 ```
