@@ -25,14 +25,14 @@ Requirements:
 
 In the file `terraform.tfvars` you can override these variables.
 
-|variable       |type   |default        |
-|---------------|-------|---------------|
-|hvn_id         |string |`hcp-vault-hvn`|
-|cluster_id     |string |`hcp-vautl`    |
-|region         |string |`us-west-2`    |
-|cloud_provider |string |`aws`          |
-|public_endpoint|boolean|`false`        |
-|tier           |string |`dev`          |
+|variable       |type   |default        |options          |
+|---------------|-------|---------------|-----------------|
+|hvn_id         |string |`hcp-vault-hvn`|alphanumeric     |
+|cluster_id     |string |`hcp-vautl`    |alphanumeric     |
+|region         |string |`us-west-2`    |Any [aws region](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html).|
+|cloud_provider |string |`aws`          |Just `aws`.      |
+|public_endpoint|boolean|`false`        |`false` or `true`|
+|tier           |string |`dev`          |Choose from `dev`, `standard_small`, `standard_medium` or `standard_large`.|
 
 ## Initialize
 
