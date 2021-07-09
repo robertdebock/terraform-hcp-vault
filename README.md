@@ -6,7 +6,7 @@ Requirements:
 
 - [Terraform](https://www.terraform.io/) installed.
 - An [HCP](https://portal.cloud.hashicorp.com/) account.
-- An [HCP service principal](https://portal.cloud.hashicorp.com/access/service-principals) and key.
+- An [HCP service principal](https://portal.cloud.hashicorp.com/access/service-principals).
 
 ## HCP service principal
 
@@ -25,14 +25,14 @@ Requirements:
 
 In the file `terraform.tfvars` you can override these variables.
 
-|variable       |type   |default        |options          |
-|---------------|-------|---------------|-----------------|
-|hvn_id         |string |`hcp-vault-hvn`|alphanumeric     |
-|cluster_id     |string |`hcp-vautl`    |alphanumeric     |
-|region         |string |`us-west-2`    |Any [aws region](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html).|
-|cloud_provider |string |`aws`          |Just `aws`.      |
-|public_endpoint|boolean|`false`        |`false` or `true`|
-|tier           |string |`dev`          |Choose from `dev`, `standard_small`, `standard_medium` or `standard_large`.|
+|variable       |type   |default        |options                                                               |
+|---------------|-------|---------------|----------------------------------------------------------------------|
+|hvn_id         |string |`hcp-vault-hvn`|alphanumeric                                                          |
+|cluster_id     |string |`hcp-vautl`    |alphanumeric                                                          |
+|region         |string |`us-west-2`    |An [aws region](https://amzn.to/3wtnhxu).                             |
+|cloud_provider |string |`aws`          |Only `aws`.                                                           |
+|public_endpoint|boolean|`false`        |`false` or `true`                                                     |
+|tier           |string |`dev`          |Either `dev`, `standard_small`, `standard_medium` or `standard_large`.|
 
 ## Initialize
 
